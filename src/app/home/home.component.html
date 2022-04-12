@@ -1,0 +1,66 @@
+<div class="dashboard">
+    <div class="dark_background">
+            <app-navbar></app-navbar>
+            <div class="container">
+            <div class="landing_page">
+                <div class="texts">
+                        <div class="text">
+                            <div class="text_bold">Food is best Served <br> at customer's order.</div>
+                            <div class="text_light">
+                                Welcome to <span class="text_bolds">Brasserie</span> where we serve simple <br> and hearty food.
+                                give us a chance to serve you, <br> we prommise to deliver.
+                            </div>
+                        </div>
+                        <div class="gotomenu"><a routerLink="/menu"><button class="btn text-light">See Menu</button></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="body">
+        <div class="menu_items">
+            <div class="meals_title">Meals</div>
+            <div class="food_items">
+                <div class="cards" id="foodcard" *ngFor="let menu of menu; let i = index">
+                        <div class="name">{{ menu.meal }}</div>
+                        <div class="images"><img src="https://res.cloudinary.com/do94dd6pt/{{ menu.image }}" height="100%" width="100%" alt=""></div>
+                        <div class="description">{{ menu.description }}</div>
+                        <div class="flex_btn_price">
+                            <div class="buy"><button (click)="addtocart(menu)">Reserve</button></div>
+                            <div class="price">Kshs. {{ menu.price }}</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="services">
+        <div class="text-center"><h3>Services</h3></div>
+       <div class="flex_cards">
+        <div class="card">
+            <div class="imagecard"><img src="../../assets/images/dining.jpg" height="100%" width="100%" alt=""></div>
+            <div class="card-body">
+            <div class="card-head">Meals</div>
+            <div class="dermy_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eligendi unde recusandae corporis, sed inventore.</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagecard"><img src="../../assets/images/catering.jpg" height="100%" width="100%" alt=""></div>
+            <div class="card-body">
+            <div class="card-head">Outside Catering</div>
+            <div class="dermy_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eligendi unde recusandae corporis, sed inventore.</div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagecard"><img src="../../assets/images/recreation.jpg" height="100%" width="100%" alt=""></div>
+            <div class="card-body">
+            <div class="card-head">Recreation</div>
+            <div class="dermy_text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et eligendi unde recusandae corporis, sed inventore.</div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<app-footer></app-footer>

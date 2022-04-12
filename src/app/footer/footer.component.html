@@ -1,0 +1,37 @@
+<footer>
+    <div class="container">
+        <div class="flex_footer">
+            <div class="socialicons">
+                <p>Social Link</p>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i> facbook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i> twitter</a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i> Google</a></li>
+                </ul>
+            </div>
+            <div class="locations">
+                <p>Location</p>
+                <ul>
+                    <li><i class="fa-solid fa-street-view"></i> Kimathis-street(block 3)</li>
+                    <li><a target="blank" href="https://www.google.com/maps/place/Moringa+School/@-1.3004862,36.782418,17z/data=!4m12!1m6!3m5!1s0x182f1a6bf7445dc1:0x940b62a3c8efde4c!2sMoringa+School!8m2!3d-1.3004862!4d36.7846067!3m4!1s0x182f1a6bf7445dc1:0x940b62a3c8efde4c!8m2!3d-1.3004862!4d36.7846067"><i class="fa-solid fa-location-dot"></i> Location</a></li>
+                </ul>
+            </div>
+            <div class="newslaterform">
+                <form action="" method="post">
+                    <p>signup to our newslatter to get updated when we add something new.</p>
+                    <div class="text-center text-success">{{ success }}</div>
+                    <div class="text-center text-danger">{{ error }}</div>
+                    <div class="form-group">
+                        <label for="newslater">Email Adress</label>
+                        <input type="text" [(ngModel)]="emailadress" autocomplete="off" name="newslater" id="newslater" required class="form-control shadow-none" placeholder="Enter email adress">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Sign-Up" (click)="addemail()" id="submitbtn" class="btn text-light">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="down">&copy;copyright2022 | all rights reserved</div>
+    </div>
+</footer>

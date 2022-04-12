@@ -1,0 +1,55 @@
+.body{
+  min-height: calc(100vh - 150px);
+}
+.fullmenu{
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to left, rgba(7, 7, 7, 0.9), rgb(255, 255, 255, 0.1));
+}
+.green{
+
+  color:#868E27;
+}
+
+.menu-card{
+position: relative;
+margin-top:2rem;
+min-height:14rem;
+border-color: #868E27;
+border-width: 1px!important;
+border-radius: 15px;
+}
+
+
+.menu-image{
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+
+.green-button{
+  background-color:#868E27;
+  color:white;
+}
+
+@media only screen and (min-width:768px){
+
+  .menu-image{
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top:-4rem;
+    right: -4rem;
+    border-radius: 50%;
+  }
+
+  .menu-card{
+    position: relative;
+    margin-top:5rem;
+    min-height:14rem;
+    width: 80%;
+    }
+
+
+}

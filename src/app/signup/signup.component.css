@@ -1,0 +1,70 @@
+.fullbodylogin{
+    display: flex;
+    height: 100vh;
+}
+.imagessection{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../../assets/images/bgs.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:bottom right;
+}
+.blured{
+    background-color: rgba(255,255,255,0.3);
+    height: 100%;
+    width: 100%;
+}
+.signupform{
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+#submitbtn{
+    background-color: #91972A;
+}
+#useremail,#clientname,#contact,#passwords,#confirmpasswords{
+    border: 1px solid #91972A;
+}
+::placeholder{
+    color: #91972A !important;
+}
+label{
+    font-size: 14px;
+    font-weight: bold;
+    color: #91972A;
+}
+.form-group a{
+    font-weight: bold;
+    color: #91972A;
+}
+.signup{
+    font-weight: bold;
+    text-align: center;
+    color: #91972A;
+    font-size: 17px;
+}
+@media screen and (max-width: 1000px){
+    .signupform{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 400px){
+    .signupform{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 850px){
+    .imagessection{
+        display: none;
+    }
+    .signupform{
+        width: 70%;
+    }
+    .loginscontent{
+        width: 90%;
+    }
+}

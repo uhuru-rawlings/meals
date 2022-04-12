@@ -1,0 +1,40 @@
+<div class="fullbodylogin">
+    <div class="imagessection">
+        <div class="blured"></div>
+    </div>
+    <div class="signupform">
+        <div class="loginscontent">
+            <div class="signup">Sign-Up</div>
+            <p>Welcome to Brasserie, just a few steps lets get you signedup.</p>
+            <form action="" method="post">
+                <div class="text-center text-info">{{ returned }}</div>
+                <div class="form-group">
+                    <label for="clientname">Full Name.</label>
+                    <input type="text" name="clientname" autocomplete="off" [(ngModel)]="clientname" id="clientname" class="form-control shadow-none" placeholder="Enter fullname">
+                </div>
+                <div class="form-group">
+                    <label for="useremail">Email Adress.</label>
+                    <input type="text" name="useremail" autocomplete="off" [(ngModel)]="useremail" id="useremail" class="form-control shadow-none" placeholder="Enter email Adress">
+                </div>
+                <div class="form-group">
+                    <label for="contact">Phone Number.</label>
+                    <input type="tel" name="contact" autocomplete="off"  [(ngModel)]="contact" id="contact" class="form-control shadow-none" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="passwords">Password</label>
+                    <input type="password" name="passwords" autocomplete="off" [(ngModel)]="passwords" id="passwords" class="form-control shadow-none" placeholder="Enter password">
+                </div>
+                <div class="form-group">
+                    <label for="confirmpasswords">Confirm Password.</label>
+                    <input type="password" name="confirmpasswords" autocomplete="off" [(ngModel)]="confirmpasswords" id="confirmpasswords" class="form-control shadow-none" placeholder="Confirm password">
+                </div>
+                <div class="form-group">
+                    <a routerLink="/login">Have account?</a>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Sign-Up" (click) ="signupuser()" class="btn text-light shadow-none" id="submitbtn">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

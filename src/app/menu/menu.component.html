@@ -1,0 +1,30 @@
+<div class="navbars">
+  <div class="fullmenu">
+      <app-navbar></app-navbar>
+  </div>
+</div>
+<div class="container body">
+<h2 class="text-center green mt-2">Menu</h2>
+<div class="row" *ngIf="menuList.length==undefined">
+  <span>The menu today looks empty. Please wait as we update it.</span>
+</div>
+<div class="row mb-5">
+  <div class="col-12 col-md-12 col-lg-6" *ngFor="let menu of menuList;let i=index">
+    <div class="card menu-card p-3 ">
+      <p class="text-center text-lg-start text-md-start"><strong>Name: {{menu.meal}}</strong></p>
+      <div class="content d-flex justify-content-lg-between justify-content-md-between flex-column-reverse align-items-center align-items-lg-start align-items-md-start">
+        <div class="description">
+          {{menu.description}}
+        </div>
+        <img src="https://res.cloudinary.com/do94dd6pt/{{menu.image}}" alt="" class="menu-image img-fluid">
+      </div>
+      <div class="menu-footer d-flex align-items-center mt-5 justify-content-between">
+        <button class="btn green-button fw-bold" (click)="addToCart(menu)">Reserve</button>
+        <span class="mx-5"><strong>Ksh. {{menu.price}}</strong></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<app-footer></app-footer>

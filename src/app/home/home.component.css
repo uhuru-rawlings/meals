@@ -1,0 +1,141 @@
+.landing_page{
+    height: 500px;
+    position: relative;
+}
+nav{
+    background: none;
+}
+.dashboard .dark_background{
+    background-image: linear-gradient(to right, rgba(7, 7, 7, 0.9), rgb(255, 255, 255, 0.1));
+    height: 100%;
+    width: 100%;
+}
+.dashboard{
+    background-image: url(../../assets/images/foods.jpg); 
+    background-size: 100% 100%;
+    height: 100vh;
+}
+.landing_page .texts{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right:0;
+    left: 0;
+    padding: 50px  30px;
+    color: #FFFFFF;
+}
+.texts .text_bold{
+    font-size: 2.9em;
+    line-height: 1em;
+    font-weight: bold;
+}
+.text_light{
+    font-size: 20px;
+    line-height: 1em;
+}
+.text_bolds{
+    font-weight: bold;
+    font-size: 25px;
+}
+.gotomenu{
+    margin-top: 15px;
+}
+.gotomenu button{
+    background-color: #91972A;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+.landing_page{
+    margin-top: 70px;
+}
+.scrolldown{
+    width: 50px;
+    margin: auto;
+}
+.food_items .cards{
+    border: 1px solid #91972A;
+    width: 270px;
+    min-height: 150px;
+    position: relative;
+    padding: 8px;
+    border-radius: 10px;
+}
+.flex_btn_price{
+    position: absolute;
+    bottom: 20px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.food_items{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    margin-bottom: 40px;
+}
+.flex_btn_price .price{
+    font-weight: bold;
+    font-size: 14px;
+}
+.flex_btn_price button{
+    background-color: #91972A;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px 5px 15px;
+    color: #FFFFFF;
+}
+.cards .images{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 90px;
+    height: 90px;
+}
+.cards .images img{
+    border-radius: 50%;
+}
+.menu_items{
+    margin: 30px;
+}
+.meals_title{
+    font-size: 19px;
+    color: #91972A;
+    font-weight: bold;
+    margin: 30px;
+    text-align: center;
+}
+.cards .name{
+    font-weight: bold;
+    font-size: 14px;
+}
+.imagecard{
+    width: 100%;
+    height: 180px;
+}
+.flex_cards{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.flex_cards .card{
+    width: 30%;
+}
+.flex_cards .card img{
+    border-radius: 5px 5px 0px 0px;
+}
+.services{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card-head{
+    font-weight: bold;
+}
+.services h3{
+    color: #91972A;
+}

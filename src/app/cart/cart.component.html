@@ -1,0 +1,42 @@
+
+<app-navbar></app-navbar>
+<div class="container">
+    <div class="body my-5">
+        <h2 class="text-center">Add to Cart!</h2>
+        <div ngif="cart.length>0">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item ID</th>
+                        <th>Meal Option</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Action</th>                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor='let item of cart'>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.meal }}</td>
+                        <td>{{ item.price }}</td>
+
+                        <td><input (change)="get_qty(item.id,quantity.value)" type="number" #quantity id="{{ item.id}}" name="quantity" class="form-control input-number" value="{{ item.qty }}" min="1" max="15"></td>
+                        <td><button class="btn btn-danger" (click)="deleteItem(item.id)">Delete</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Order Total {{cartTotal}}</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="checkout">
+                <button class="btn btn-success" id="btn" type="submit" (click)="submit_order()">Confirm Reservation</button>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
+

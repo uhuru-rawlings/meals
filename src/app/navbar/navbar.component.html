@@ -1,0 +1,14 @@
+<nav>
+    <div class="container" style="display: flex;justify-content: space-between;">
+        <div class="logo"><a routerLink=""><button class="btn shadow-none">Brasserie</button></a></div>
+        <div class="nav_links">
+                <a routerLink=""><button class="btn shadow-none">Home</button></a>
+                <a routerLink="/menu"><button class="btn shadow-none">Menu</button></a>
+                <a routerLink="/cart"><button class="btn shadow-none">Cart <sup>{{ cart }}</sup></button></a>
+                <a routerLink="/orders"><button class="btn shadow-none">History</button></a>
+
+               <a routerLink="/login" *ngIf="logins == 'nouser';"><button class="btn loginbtn shadow-none">Login</button></a>
+               <a routerLink="" *ngIf="logins != 'nouser';"><button (click)="logoutuser()" class="btn loginbtn shadow-none">Logout</button></a>
+        </div>
+    </div>
+</nav>

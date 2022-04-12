@@ -1,0 +1,7 @@
+.error_404{
+    height: calc(100vh - 260px);
+}
+.error_404{
+    text-align: center;
+    font-size: 1.6rem;
+}

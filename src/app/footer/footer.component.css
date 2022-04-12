@@ -1,0 +1,37 @@
+footer{
+    background-color: #91972A;
+}
+.down{
+    text-align: center;
+    color: #FFFFFF;
+}
+.flex_footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px 20px 30px;
+}
+ul li{
+    list-style: none;
+}
+::placeholder{
+    color: #91972A !important;
+}
+#submitbtn{
+    box-shadow: 2px 2px 3px gainsboro;
+}
+.form-group{
+    margin-top: 10px;
+}
+.socialicons ul, .locations ul{
+    margin: 0;
+    padding: 0;
+    color: #FFFFFF;
+}
+.socialicons ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.locations ul li a{
+    color: #FFFFFF;
+    text-decoration: none;
+}

@@ -1,0 +1,28 @@
+<div class="fullbodylogin">
+    <div class="imagessection">
+        <div class="blured"></div>
+    </div>
+    <div class="loginforms">
+        <div class="loginscontent">
+            <div class="login_text">Login</div>
+                <p>Welcome back to Brasserie, login to reserve a meal</p>
+                <form  method="post">
+                    <div class="text-danger">{{ response }}</div>
+                    <div class="form-group">
+                        <label for="useremail">Email Adress</label>
+                        <input type="email" name="useremail" [(ngModel)]="useremail" id="useremail" autocomplete="off"  class="form-control shadow-none" placeholder="Enter username">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" name="password" [(ngModel)]="password"  id="password"  autocomplete="off" class="form-control shadow-none" placeholder="Enter password">
+                    </div>
+                    <div class="form-group flex_links">
+                        <a routerLink="/signup">Dont have account?</a> <a routerLink="/resetpassword">Forget password?</a>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Login" id="submitbtn" (click)="loginuser()" class="btn text-light shadow-none">
+                    </div>
+                </form>
+            </div>
+        </div>
+</div>

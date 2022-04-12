@@ -1,0 +1,91 @@
+.fullbodylogin{
+    display: flex;
+    height: 100vh;
+}
+#submitbtn{
+    background-color: #91972A;
+    font-weight: bold;
+}
+.imagessection{
+    width: 50%;
+    height: 100vh;
+    background-image: url(../../assets/images/bgs.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position:bottom right;
+}
+.loginforms{
+    width: 50%;
+    margin: auto;
+    margin-top: 70px;
+    padding: 10px;
+    padding-bottom: 50px;
+    border-radius: 20px;
+}
+.blured{
+    background-color: rgba(255,255,255,0.3);
+    height: 100%;
+    width: 100%;
+}
+.loginscontent{
+    width: 60%;
+    margin: auto;
+}
+.form-group{
+    margin-top: 10px;
+}
+.flex_links{
+    display: flex;
+    justify-content: space-between;
+}
+.flex_links a{
+    color: #91972A;
+    font-weight: bold;
+    font-size: 14px;
+}
+.login_text{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #91972A;
+}
+#useremail,#password{
+    border: 1px solid #91972A;
+}
+::placeholder{
+    color: #91972A !important;
+}
+label{
+    color: #91972A;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 1000px){
+    .loginforms{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 400px){
+    .loginforms{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 370px){
+    .loginforms{
+        width: 95%;
+    }
+    .loginscontent{
+        width: 95%;
+    }
+}
+@media screen and (max-width: 850px){
+    .imagessection{
+        display: none;
+    }
+    .loginforms{
+        width: 70%;
+    }
+    .loginscontent{
+        width: 90%;
+    }
+}

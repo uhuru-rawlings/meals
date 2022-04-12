@@ -1,0 +1,12 @@
+.body{
+    margin-left: 30px;
+    margin-right: 30px;
+    height: calc(100vh - 150px);
+}
+.price{
+    font-size: small;
+    
+}
+#btn {
+    background-color: #868E27 ;
+}
